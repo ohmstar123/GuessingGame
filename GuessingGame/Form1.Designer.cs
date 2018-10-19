@@ -32,7 +32,7 @@
             this.picknumberLabel = new System.Windows.Forms.Label();
             this.Input = new System.Windows.Forms.TextBox();
             this.guessButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.outputLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -76,15 +76,15 @@
             this.guessButton.UseVisualStyleBackColor = true;
             this.guessButton.Click += new System.EventHandler(this.guessButton_Click);
             // 
-            // label1
+            // outputLabel
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(-1, 380);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(801, 70);
-            this.label1.TabIndex = 4;
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.outputLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.outputLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.outputLabel.Location = new System.Drawing.Point(-1, 380);
+            this.outputLabel.Name = "outputLabel";
+            this.outputLabel.Size = new System.Drawing.Size(801, 70);
+            this.outputLabel.TabIndex = 4;
+            this.outputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -92,7 +92,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.guessButton);
             this.Controls.Add(this.Input);
             this.Controls.Add(this.picknumberLabel);
@@ -110,7 +110,7 @@
         private System.Windows.Forms.Label picknumberLabel;
         private System.Windows.Forms.TextBox Input;
         private System.Windows.Forms.Button guessButton;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label outputLabel;
     }
 }
 
