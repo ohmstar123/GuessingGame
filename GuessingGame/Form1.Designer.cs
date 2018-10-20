@@ -33,16 +33,17 @@
             this.Input = new System.Windows.Forms.TextBox();
             this.guessButton = new System.Windows.Forms.Button();
             this.outputLabel = new System.Windows.Forms.Label();
+            this.testingLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.ForeColor = System.Drawing.SystemColors.Control;
             this.titleLabel.Location = new System.Drawing.Point(292, 78);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(209, 31);
+            this.titleLabel.Size = new System.Drawing.Size(222, 31);
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "Guessing Game";
             // 
@@ -79,6 +80,7 @@
             // outputLabel
             // 
             this.outputLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.outputLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outputLabel.ForeColor = System.Drawing.SystemColors.Control;
             this.outputLabel.Location = new System.Drawing.Point(-1, 380);
             this.outputLabel.Name = "outputLabel";
@@ -86,12 +88,23 @@
             this.outputLabel.TabIndex = 4;
             this.outputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // testingLabel
+            // 
+            this.testingLabel.AutoSize = true;
+            this.testingLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.testingLabel.Location = new System.Drawing.Point(637, 52);
+            this.testingLabel.Name = "testingLabel";
+            this.testingLabel.Size = new System.Drawing.Size(35, 13);
+            this.testingLabel.TabIndex = 5;
+            this.testingLabel.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.testingLabel);
             this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.guessButton);
             this.Controls.Add(this.Input);
@@ -111,6 +124,7 @@
         private System.Windows.Forms.TextBox Input;
         private System.Windows.Forms.Button guessButton;
         private System.Windows.Forms.Label outputLabel;
+        private System.Windows.Forms.Label testingLabel;
     }
 }
 
