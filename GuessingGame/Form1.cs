@@ -7,38 +7,58 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace GuessingGame
 {
     public partial class Form1 : Form
     {
-        Random randgen = new Random();
+       
         int randomValue;
         
         public Form1()
         {
             InitializeComponent();
+            Random randgen = new Random();
+            randomValue = randgen.Next(1, 101);
+
         }
+  
 
         private void guessButton_Click(object sender, EventArgs e)
         {
-            int userGuess;
-            userGuess = Convert.ToInt32(Input.Text);
-            randomValue = randgen.Next(1, 101);
+            try
+            {
+                testingLabel.Text = randomValue + "";
 
-            if (userGuess == randomValue)
-            {
-                outputLabel.Text = "You got it";
-            }
-            else if (userGuess < randomValue)
-            {
-                outputLabel.Text = "Too low";
-            }
-            else if (userGuess > randomValue)
-            {
-                outputLabel.Text = "Too high";
+                int userGuess;
+                userGuess = Convert.ToInt32(Input.Text);
+
+
+
+                if (userGuess == randomValue)
+                {
+                    outputLabel.Text = "You got it";
+
+                    Refresh();
+                    Thread.Sleep(3000);
+
+                    this.Close();
+                }
+                else if (userGuess < randomValue)
+                {
+                    outputLabel.Text = "Too low";
+                }
+                else if (userGuess > randomValue)
+                {
+                    outputLabel.Text = "Too high";
+                }
             }
 
+            catch
+            {
+                outputLabel.Text = "Please enter a digit from 1 to 100";
+            }
 
         }
     }
