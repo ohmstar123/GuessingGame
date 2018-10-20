@@ -33,7 +33,6 @@
             this.Input = new System.Windows.Forms.TextBox();
             this.guessButton = new System.Windows.Forms.Button();
             this.outputLabel = new System.Windows.Forms.Label();
-            this.testingLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -88,30 +87,19 @@
             this.outputLabel.TabIndex = 4;
             this.outputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // testingLabel
-            // 
-            this.testingLabel.AutoSize = true;
-            this.testingLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.testingLabel.Location = new System.Drawing.Point(637, 52);
-            this.testingLabel.Name = "testingLabel";
-            this.testingLabel.Size = new System.Drawing.Size(35, 13);
-            this.testingLabel.TabIndex = 5;
-            this.testingLabel.Text = "label1";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.testingLabel);
             this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.guessButton);
             this.Controls.Add(this.Input);
             this.Controls.Add(this.picknumberLabel);
             this.Controls.Add(this.titleLabel);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Guessing Game";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,7 +112,6 @@
         private System.Windows.Forms.TextBox Input;
         private System.Windows.Forms.Button guessButton;
         private System.Windows.Forms.Label outputLabel;
-        private System.Windows.Forms.Label testingLabel;
     }
 }
 

@@ -13,9 +13,9 @@ namespace GuessingGame
 {
     public partial class Form1 : Form
     {
-       
+
         int randomValue;
-        
+
         public Form1()
         {
             InitializeComponent();
@@ -23,19 +23,18 @@ namespace GuessingGame
             randomValue = randgen.Next(1, 101);
 
         }
-  
+
 
         private void guessButton_Click(object sender, EventArgs e)
         {
             try
             {
-                testingLabel.Text = randomValue + "";
-
+                
+                //variables and conversions 
                 int userGuess;
                 userGuess = Convert.ToInt32(Input.Text);
 
-
-
+                //If statements 
                 if (userGuess == randomValue)
                 {
                     outputLabel.Text = "You got it";
