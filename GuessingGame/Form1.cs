@@ -41,7 +41,6 @@ namespace GuessingGame
 
                     Refresh();
                     Thread.Sleep(3000);
-
                     this.Close();
                 }
                 else if (userGuess < randomValue)
